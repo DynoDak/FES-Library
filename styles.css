@@ -131,7 +131,7 @@ button:active {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 101;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -462,7 +462,11 @@ select {
 }
 
 .books__loading--spinner {
-  display: none;
+  display: none !important;
+}
+
+.books__loading .books__loading--spinner {
+  display: block !important;
 }
 
 .fa-spinner {
